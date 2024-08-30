@@ -38,3 +38,7 @@ button {
     margin-top: 5px;
     width: 10%;
 }
+button:hover{
+    color:white;
+    background-color: gainsboro;
+}
