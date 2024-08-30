@@ -1,0 +1,40 @@
+.nav-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav {
+    padding: 10px;
+}
+
+
+/* headers */
+h1 { 
+    display: flex;
+    justify-content: center;
+}
+
+
+/* form style */
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    padding-top: 10px;
+}
+input[type="text"],
+input[type="email"]{
+    width: 30%;
+
+}
+textarea {
+    border: black solid;
+}
+
+button {
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 10%;
+}

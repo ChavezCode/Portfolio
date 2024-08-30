@@ -5,9 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href = "stylesheet.css">
 </head>
 
 <body>
+    <div class="nav-align">
+        <nav>about</nav>
+        <nav>portfolio</nav>
+        <nav>contact</nav>
+    </div>
+    <h1> Welcome!</h1>
+    
+    <content>
+        <div>
+            <!-- Add emojis to the listed items -->
+            <h3>about me</h3>
+                <p>recent grad</p>
+                <p>life long learner</p>
+                <p>self-taught programmer & formal education</p>
+                <p>html , css, java, javascript, typescript</p>
+        </div>
+
+        <div>
+            <h3>portfolio</h3>
+            <p>here are some of the things I've done</p>
+        </div>
+
+        <div class="contact-form-container">
+            <h3>Message me</h3>
+            <form id="contact-form" action="submit_form.php" method="post">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Leave me a message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </content>
 
 </body>
 
