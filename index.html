@@ -4,50 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JC</title>
     <link rel = "stylesheet" href = "stylesheet.css">
+    <link rel = "stylesheet" href = "flickity.css" media="screen">
 </head>
 
 <body>
-    <div class="nav-align">
-        <nav>about</nav>
-        <nav>portfolio</nav>
+    <nav class="nav-align">
+        <nav>About Me</nav>
+        <nav>Projects</nav>
         <nav>contact</nav>
-    </div>
+    </nav>
     <h1> Welcome!</h1>
     
-    <content>
-        <div>
+    <content class="items">
+
             <!-- Add emojis to the listed items -->
-            <h3>about me</h3>
-                <p>recent grad</p>
-                <p>life long learner</p>
-                <p>self-taught programmer & formal education</p>
-                <p>html , css, java, javascript, typescript</p>
+        <h3>A little about me</h3>
+            
+        <div class="text">
+            <p>Hi, I'm Jorge!&#128075;</p>
+            <p>I'm a recent college graduate and excited to jump into Software Engineering and continue to grow my skills.
+                My friends and family usually call me <strong>"George"</strong> or <strong>"Georgie"</strong> like the little brother from the movie IT. 
+                That being said, I wouldn't mind being reffered to as Jorge. I also use <strong>He/Him</strong> pronouns. 
+                <br>
+                I've been working full time in a different industry since I first started school but have managed to work on a few side projects on my spare time that you can find below. 
+                <br>
+                <br>
+                When I'm not working on any projects, I tend to watch YouTube and listen to podcasts for entertainment. 
+                I can also be spotted at the gym, Wallace Marine Park during kickball season, or your local bakery (<em>or bakery section at a grocery store</em>) 
+                on an adventure to find the best cinnamon roll in Salem (<em>might be biased because I love Winco but so far they're winning</em>)!
+                <br>
+                <br>
+                Here's a list of some of the things I like to watch and/or listen to:
+                <ul>
+                    <li><a href="https://www.youtube.com/@cybernews">Cybernews</a></li>
+                    <li><a href="https://darknetdiaries.com/">Darknet Diaries</a></li>
+                    <li><a href="https://www.youtube.com/@learnwithjason">Learn with Jason</a></li>
+                    <li><a href="https://syntax.fm/">Syntax</a></li>
+                    <li> Once Upon a Time</li>
+                </ul>
+            </p>
+            <p>life long learner</p>
+            <p>self-taught programmer & formal education</p>
+            <p>html, css, java, javascript, typescript</p>
         </div>
+                
 
+        <h3>My Projects</h3>
         <div>
-            <h3>portfolio</h3>
-            <p>here are some of the things I've done</p>
+            <p>here are some of the things I've worked on</p>
         </div>
+            <div class="gallery js-flickity" 
+            data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+                <div class="gallery-cell"></div>
+            </div>
 
-        <div class="contact-form-container">
-            <h3>Message me</h3>
-            <form id="contact-form" action="submit_form.php" method="post">
-                <label for="name">Full name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Leave me a message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send</button>
-            </form>
-        </div>
+        <h3>Chat with me!</h3>
+        <!-- Add chat box -->
     </content>
-
+    <script src="flickity.js"></script>
 </body>
 
 </html>
