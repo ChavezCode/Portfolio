@@ -81,7 +81,19 @@ body {
 
 
 
+/* form */
+.form {
+    border: black;
+    border-style: solid;
+    padding: 10px;
+    background-color: #112A46;
+    color: #ACC8E5;
+}
 
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
 
 
 

@@ -26,7 +26,7 @@
             <p>Hi, I'm Jorge!&#128075;</p>
             <p>I'm a recent college graduate and excited to jump into Software Engineering and continue to grow my skills.
                 My friends and family usually call me <strong>"George"</strong> or <strong>"Georgie"</strong> like the little brother from the movie IT. 
-                That being said, I wouldn't mind being reffered to as Jorge. I also use <strong>He/Him</strong> pronouns. 
+                That being said, I wouldn't mind being reffered to as Jorge. I also use <strong>"He/Him"</strong> pronouns. 
                 <br>
                 I've been working full time in a different industry since I first started school but have managed to work on a few side projects on my spare time that you can find below. 
                 <br>
@@ -63,9 +63,32 @@
                 <div class="gallery-cell"></div>
                 <div class="gallery-cell"></div>
             </div>
+            <br>
+            <br>
+            <br>
+
 
         <h3>Chat with me!</h3>
+
         <!-- Add chat box -->
+         <div>
+             <form class="form" action="submit_form.php" method="post">
+                <div class="inputs">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname"></input>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"></input>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"></input>
+                    
+                    <label for="message">Send me a message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+
+
+         </div>
+         </form>
     </content>
     <script src="flickity.js"></script>
 </body>
